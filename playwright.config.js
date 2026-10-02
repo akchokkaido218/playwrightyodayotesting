@@ -8,7 +8,7 @@ export default defineConfig({
   reporter:[['html',{open:'never'}]],
 
   use: {
-    headless: true,
+    headless: false,
     browserName: 'chromium',
   },
 });
