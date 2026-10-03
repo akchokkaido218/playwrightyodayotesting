@@ -1,6 +1,6 @@
-import { defineConfig } from '@playwright/test';
+const { defineConfig } = require('@playwright/test');
 
-export default defineConfig({
+module.exports = defineConfig({
   testDir: './tests',
 
   workers: 2,
@@ -8,7 +8,13 @@ export default defineConfig({
   reporter:[['html',{open:'never'}]],
 
   use: {
-    headless: false,
-    browserName: 'chromium',
+    headless: false
   },
+  projects:
+  [
+    {name: "msedge amazon test", testMatch: "amazon.spec.js", 
+      use:{browserName:"chromium", channel:"msedge"}},
+    {name: "msedge yodayo test", testMatch: "yodayo.spec.js", 
+      use:{browserName:"chromium", channel: "msedge"}}
+  ]
 });
