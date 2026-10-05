@@ -8,7 +8,7 @@ module.exports = defineConfig({
   reporter:[['html',{open:'never'}]],
 
   use: {
-    headless: false
+    headless: false, screenshot: "only-on-failure"
   },
   projects:
   [
