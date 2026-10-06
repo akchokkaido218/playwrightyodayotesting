@@ -5,9 +5,14 @@ module.exports = defineConfig({
 
   workers: 2,
   
-  reporter:[['html',{open:'never'}]],
+  reporter:
+  [
+    ['html',{outputFolder: 'playwright-report', open:'never'}],
+    ['junit', {outputFile: 'results/test-results.xml' }]
+  ],
 
   use: {
+    //headless: false, screenshot: "only-on-failure", video: "on"
     headless: false, screenshot: "only-on-failure"
   },
   projects:

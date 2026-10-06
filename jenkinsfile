@@ -39,6 +39,8 @@ pipeline {
                 reportFiles: 'index.html',
                 reportName: 'Playwright Report'
             ])
+            //add this line to parse the Junit XML
+            junit testResults: "results/test-results.xml", allowEmptyResults: true
         }
     }
 }
