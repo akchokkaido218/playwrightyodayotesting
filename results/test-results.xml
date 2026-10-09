@@ -1,54 +1,6 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="11.942439">
-<testsuite name="amazon.spec.js" timestamp="2026-10-06T06:44:15.585Z" hostname="msedge amazon test" tests="1" failures="1" skipped="0" time="9.337" errors="0">
-<testcase name="I am testing" classname="amazon.spec.js" time="9.337">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-results\amazon-I-am-testing-msedge-amazon-test\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\amazon-I-am-testing-msedge-amazon-test\error-context.md]]
-]]>
-</system-out>
-<failure message="expect(page).toHaveTitle(expected) failed" type="expect.toHaveTitle">
-<![CDATA[  [msedge amazon test] › amazon.spec.js:2:5 › I am testing ─────────────────────────────────────────
-
-    Error: expect(page).toHaveTitle(expected) failed
-
-    Expected: "Amazon"
-    Received: "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
-    Timeout:  5000ms
-
-    Call log:
-      - Expect "toHaveTitle" with timeout 5000ms
-        5 × locator resolved to <html lang="en">…</html>
-          - unexpected value ""
-        - waiting for "https://www.amazon.in/" navigation to finish...
-        - navigated to "https://www.amazon.in/"
-        - locator resolved to <html lang="en-in" class="a-no-js" data-19ax5a9jf="dingo">…</html>
-        - unexpected value ""
-        4 × locator resolved to <html lang="en-in" data-19ax5a9jf="dingo" data-aui-build-date="3.26.8-2026-09-18" class="a-ws a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-gradients a-transform3d a-touch-scrolling a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition null">…</html>
-          - unexpected value "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"
-
-
-      3 |     {
-      4 |         await page.goto("https://www.amazon.in/");
-    > 5 |         await expect(page).toHaveTitle('Amazon');
-        |                            ^
-      6 |         await page.waitForTimeout(5000);
-      7 |     });
-      8 |
-        at F:\gittesting\tests\amazon.spec.js:5:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-results\amazon-I-am-testing-msedge-amazon-test\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-results\amazon-I-am-testing-msedge-amazon-test\error-context.md
-]]>
-</failure>
-</testcase>
-</testsuite>
-<testsuite name="yodayo.spec.js" timestamp="2026-10-06T06:44:15.585Z" hostname="msedge yodayo test" tests="1" failures="0" skipped="0" time="7.654" errors="0">
-<testcase name="I am testing" classname="yodayo.spec.js" time="7.654">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.691756000000001">
+<testsuite name="yodayo.spec.js" timestamp="2026-10-09T07:04:29.212Z" hostname="msedge yodayo test" tests="1" failures="0" skipped="0" time="4.749" errors="0">
+<testcase name="I am testing" classname="yodayo.spec.js" time="4.749">
 </testcase>
 </testsuite>
 </testsuites>
