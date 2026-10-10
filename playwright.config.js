@@ -6,7 +6,7 @@ module.exports = defineConfig({
   reporter:
   [
     ['html',{outputFolder: 'playwright-report', open:'never'}],
-    ['junit', {outputFile: 'results/test-results.xml' }]
+    ['junit', {outputFile: 'results/test-results.xml', embedAnnotationsAsProperties: true}]
   ],
 
   use: {

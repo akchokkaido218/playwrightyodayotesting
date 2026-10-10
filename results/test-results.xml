@@ -1,6 +1,10 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.022810000000001">
-<testsuite name="yodayo.spec.js" timestamp="2026-10-09T07:17:28.580Z" hostname="msedge yodayo test" tests="1" failures="0" skipped="0" time="5.299" errors="0">
-<testcase name="I am testing" classname="yodayo.spec.js" time="5.299">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="7.493001">
+<testsuite name="yodayo.spec.js" timestamp="2026-10-10T07:30:01.515Z" hostname="msedge yodayo test" tests="1" failures="0" skipped="0" time="5.575" errors="0">
+<testcase name="I am testing" classname="yodayo.spec.js" time="5.575">
+<properties>
+<property name="test_key" value="AT-2">
+</property>
+</properties>
 </testcase>
 </testsuite>
 </testsuites>
